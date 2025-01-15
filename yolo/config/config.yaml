@@ -1,4 +1,5 @@
 hydra:
+  verbose: True
   run:
     dir: runs
 
@@ -6,7 +7,7 @@ name: v9-dev
 
 defaults:
   - _self_
-  - task: inference
+  - task: train
   - dataset: coco
-  - model: v9-c
+  - model: v9-s
   - general
